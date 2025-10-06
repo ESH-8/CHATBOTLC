@@ -1,0 +1,105 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#chatbot {
+  height: 100%;
+  width: 100%;
+  background: #eafaf1; /* Vert très clair */
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+#header {
+  background: #a6dcef; /* Bleu clair */
+  text-align: center;
+  padding: 15px;
+  border-bottom: 2px solid #91c9e8;
+}
+
+#header h2 {
+  margin: 5px 0 0;
+  font-size: 20px;
+  color: #034078;
+}
+
+.banner-logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+/* MESSAGES */
+#messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: white;
+}
+
+.msg {
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 70%;
+  clear: both;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  background: #a6dcef; /* Bleu clair */
+  color: #034078;
+  float: right;
+  justify-content: flex-end;
+}
+
+.bot {
+  background: #c3f0ca; /* Vert clair */
+  color: #034078;
+  float: left;
+  justify-content: flex-start;
+}
+
+.bot::before {
+  content: url('logo-it.png'); /* Icône IT devant le message bot */
+  margin-right: 8px;
+}
+
+/* INPUT */
+#inputArea {
+  display: flex;
+  border-top: 1px solid #ccc;
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+#userInput {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+#sendBtn {
+  margin-left: 10px;
+  background: #a6dcef;
+  color: #034078;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background: #91c9e8;
+}
